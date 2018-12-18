@@ -9,6 +9,13 @@
 
 <script>
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  mounted () {
+    console.log('- Firebase inicializado')
+    console.log('-- Autenticação')
+    console.log(this.$auth)
+    console.log('-- Banco de dados')
+    console.log(this.$db)
+  }
 }
 </script>
