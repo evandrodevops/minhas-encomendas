@@ -4,6 +4,7 @@ const routes = [
     path: '/',
     component: () => import('layouts/MyLayout.vue'),
     children: [
+      { path: 'nova-encomenda', component: () => import('pages/NewOrder.vue') },
       { path: '', component: () => import('pages/Index.vue') }
     ]
   }
